@@ -19,7 +19,7 @@ class OrdersTest extends TestCase
         // На входе получается следующие параметры: адрес откуда и куда,
         // координаты откуда и куда, ID тарифа.
         $order = [
-            'tariff_id'               => 1,
+            'tariff_id'               => 10,
             'original_address'        => 'Мытыщи',
             'destination_address'     => 'Медведкого',
             'original_coordinates'    => [

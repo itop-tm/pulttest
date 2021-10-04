@@ -30,7 +30,7 @@ class VehiclesTest extends TestCase
     {
         $vehicle = Vehicle::factory(1);
 
-        $response = $this->json('PUT', 'vehicle/1', $vehicle->definition());
+        $response = $this->json('PUT', 'vehicle/10', $vehicle->definition());
 
         $response->dump();
 
@@ -48,7 +48,7 @@ class VehiclesTest extends TestCase
 
     public function test_it_can_fetch_vehicle_by_id_test()
     {
-        $response = $this->json('GET', 'vehicle/1');
+        $response = $this->json('GET', 'vehicle/10');
 
         $response->dump();
 
@@ -57,7 +57,7 @@ class VehiclesTest extends TestCase
 
     public function test_it_can_delete_vehicle_by_id_test()
     {
-        $response = $this->json('DELETE', 'vehicle/1');
+        $response = $this->json('DELETE', 'vehicle/10');
 
         $response->dump();
 

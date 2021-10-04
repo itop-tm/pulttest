@@ -30,7 +30,7 @@ class DriversTest extends TestCase
     {
         $driver = Driver::factory(1);
 
-        $response = $this->json('PUT', 'driver/1', $driver->definition());
+        $response = $this->json('PUT', 'driver/10', $driver->definition());
 
         $response->dump();
 
@@ -48,7 +48,7 @@ class DriversTest extends TestCase
 
     public function test_it_can_fetch_driver_by_id_test()
     {
-        $response = $this->json('GET', 'driver/1');
+        $response = $this->json('GET', 'driver/10');
 
         $response->dump();
 
@@ -57,7 +57,7 @@ class DriversTest extends TestCase
 
     public function test_it_can_delete_driver_by_id_test()
     {
-        $response = $this->json('DELETE', 'driver/1');
+        $response = $this->json('DELETE', 'driver/10');
 
         $response->dump();
 
